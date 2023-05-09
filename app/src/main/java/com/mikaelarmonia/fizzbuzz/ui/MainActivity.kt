@@ -3,6 +3,7 @@ package com.mikaelarmonia.fizzbuzz.ui
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import com.mikaelarmoni.ui.theme.FizzBuzzTheme
 
@@ -20,5 +21,5 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun MainComponent() {
-
+    Text(text = "Hello World")
 }

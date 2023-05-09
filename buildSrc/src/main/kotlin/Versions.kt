@@ -4,7 +4,7 @@ object Versions {
     // DI
     const val koin = "3.4.0"
     const val koinAndroidCompose = "3.4.4"
-    const val koinAndroidNavigation = "3.4.4"
+    const val koinAndroidNavigation = "3.4.0"
 
 
     // region Android
