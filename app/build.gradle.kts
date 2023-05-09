@@ -1,0 +1,19 @@
+plugins {
+    `android`
+    `kotlin-android`
+}
+
+android {
+    defaultAndroidApp(appName = "app")
+}
+
+dependencies {
+    android()
+    material()
+    compose()
+    koin()
+
+    coreUi()
+
+    tests()
+}
