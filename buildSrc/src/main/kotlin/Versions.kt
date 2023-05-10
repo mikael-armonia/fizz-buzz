@@ -16,7 +16,7 @@ object Versions {
     const val coroutines = "1.6.4"
 
     // Compose
-    const val composeCompiler = "1.4.7"
+    const val composeCompiler = "1.4.4"
     const val composeUi = "1.4.3"
 
     // Navigation
@@ -24,5 +24,10 @@ object Versions {
 
     // Material
     const val material = "1.9.0"
+
+    // Tests
+    const val jUnit = "4.13.2"
+    const val androidXJUnit = "1.1.5"
+    const val espresso = "3.5.1"
     // endregion
 }

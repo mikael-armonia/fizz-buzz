@@ -18,9 +18,9 @@ fun DependencyHandler.material() {
 }
 
 fun DependencyHandler.tests() {
-    testImplementation("junit:junit:4.13.2")
-    androidTestImplementation("androidx.test.ext:junit:1.1.5")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+    testImplementation("junit:junit:${Versions.jUnit}")
+    androidTestImplementation("androidx.test.ext:junit:${Versions.androidXJUnit}")
+    androidTestImplementation("androidx.test.espresso:espresso-core:${Versions.espresso}")
 }
 
 fun DependencyHandler.coroutines() {
@@ -50,6 +50,10 @@ fun DependencyHandler.compose() {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4:${Versions.composeUi}")
     debugImplementation("androidx.compose.ui:ui-tooling:${Versions.composeUi}")
     debugImplementation("androidx.compose.ui:ui-test-manifest:${Versions.composeUi}")
+}
+
+fun DependencyHandler.navigation() {
+    implementation("androidx.navigation:navigation-compose:${Versions.navigation}")
 }
 
 private fun DependencyHandler.project(projectName: String) {
