@@ -11,6 +11,7 @@ dependencies {
     android()
     material()
     compose()
+    navigation()
 
     tests()
 }

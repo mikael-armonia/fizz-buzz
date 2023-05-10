@@ -7,6 +7,10 @@ fun DependencyHandler.coreUi() {
     project(projectName = "ui")
 }
 
+fun DependencyHandler.forms() {
+    project(projectName = "forms")
+}
+
 fun DependencyHandler.android() {
     implementation("androidx.core:core-ktx:${Versions.coreKtx}")
     implementation("androidx.appcompat:appcompat:${Versions.appCompat}")
