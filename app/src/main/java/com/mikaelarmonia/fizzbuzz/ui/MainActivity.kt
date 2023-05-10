@@ -5,6 +5,8 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.rememberNavController
 import com.mikaelarmoni.ui.theme.FizzBuzzTheme
 
 class MainActivity : ComponentActivity() {
@@ -13,13 +15,11 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             FizzBuzzTheme {
-                MainComponent()
+                val navController = rememberNavController()
+                NavHost(navController = navController, startDestination = "") {
+                    fizzBuzzNavGraph()
+                }
             }
         }
     }
-}
-
-@Composable
-fun MainComponent() {
-    Text(text = "Hello World")
 }
