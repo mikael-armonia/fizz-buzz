@@ -11,6 +11,10 @@ fun DependencyHandler.forms() {
     project(projectName = "forms")
 }
 
+fun DependencyHandler.utils() {
+    project(projectName = "utils")
+}
+
 fun DependencyHandler.android() {
     implementation("androidx.core:core-ktx:${Versions.coreKtx}")
     implementation("androidx.appcompat:appcompat:${Versions.appCompat}")

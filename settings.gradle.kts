@@ -17,3 +17,4 @@ rootProject.name = "Fizz Buzz"
 include(":app")
 include(":ui")
 include(":forms")
+include(":utils")

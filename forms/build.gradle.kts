@@ -1,6 +1,6 @@
 plugins {
-    id("com.android.library")
-    id("org.jetbrains.kotlin.android")
+    `android-library`
+    `kotlin-android`
 }
 
 android {
@@ -12,6 +12,8 @@ dependencies {
     material()
     compose()
     koin()
+
+    utils()
 
     tests()
 }

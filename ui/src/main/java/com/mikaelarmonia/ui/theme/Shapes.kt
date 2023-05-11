@@ -1,4 +1,4 @@
-package com.mikaelarmoni.ui.theme
+package com.mikaelarmonia.ui.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Shapes

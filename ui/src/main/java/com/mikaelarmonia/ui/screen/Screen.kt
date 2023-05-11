@@ -1,4 +1,4 @@
-package com.mikaelarmoni.ui.screen
+package com.mikaelarmonia.ui.screen
 
 import android.util.Log
 import androidx.navigation.NamedNavArgument
@@ -8,6 +8,7 @@ private const val TAG = "Screen"
 sealed class Screen {
     abstract val baseRoute: String
     abstract val navArgs: List<NamedNavArgument>
+
     fun destination(vararg params: Any): String? {
         return when (params.size) {
             navArgs.size -> {

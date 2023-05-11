@@ -1,4 +1,4 @@
-package com.mikaelarmoni.ui
+package com.mikaelarmonia.ui
 
 import org.junit.Test
 
