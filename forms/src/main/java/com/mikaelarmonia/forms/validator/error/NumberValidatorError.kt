@@ -1,4 +1,4 @@
-package com.mikaelarmonia.forms.domain.validator.error
+package com.mikaelarmonia.forms.validator.error
 
 sealed class NumberValidatorError : ValidatorError() {
     object NotANumberError : NumberValidatorError()

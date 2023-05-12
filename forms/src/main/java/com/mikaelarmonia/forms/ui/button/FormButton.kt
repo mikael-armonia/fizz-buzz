@@ -1,4 +1,4 @@
-package com.mikaelarmonia.forms.ui
+package com.mikaelarmonia.forms.ui.button
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.PaddingValues

@@ -1,12 +1,12 @@
-package com.mikaelarmonia.forms.domain.validator
+package com.mikaelarmonia.forms.validator
 
-import com.mikaelarmonia.forms.domain.validator.error.NumberValidatorError
+import com.mikaelarmonia.forms.validator.error.NumberValidatorError
 import com.mikaelarmonia.utils.FizzBuzzResult
 import com.mikaelarmonia.utils.isNumeric
 
-class NumberEntryValidator(
+class InputNumberValidator(
     private val maxDigits: Int
-) : EntryValidator {
+) : InputFieldValidator {
     override fun checkForErrors(value: String): FizzBuzzResult<Unit, NumberValidatorError> {
         return when {
             !value.isNumeric() -> FizzBuzzResult.Failure(NumberValidatorError.NotANumberError)

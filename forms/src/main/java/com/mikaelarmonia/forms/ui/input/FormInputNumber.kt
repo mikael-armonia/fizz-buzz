@@ -1,4 +1,4 @@
-package com.mikaelarmonia.forms.ui
+package com.mikaelarmonia.forms.ui.input
 
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.runtime.Composable
@@ -11,14 +11,14 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
 import com.mikaelarmonia.fizzbuzz.forms.R
-import com.mikaelarmonia.forms.ui.model.FormInputNumberEntry
+import com.mikaelarmonia.forms.ui.FormScope
+import com.mikaelarmonia.forms.ui.model.FormInputNumberField
 
 @Composable
-fun FormScope.FormInputNumber(
+internal fun FormScope.FormInputNumber(
     modifier: Modifier = Modifier,
-    inputId: String,
     title: String,
-    entry: FormInputNumberEntry,
+    entry: FormInputNumberField,
     imeAction: ImeAction = ImeAction.Next,
 ) {
     var stringValue by remember {
@@ -29,7 +29,7 @@ fun FormScope.FormInputNumber(
 
     FormInput(
         modifier = modifier,
-        inputId = inputId,
+        inputId = entry.inputId,
         title = title,
         value = stringValue,
         onValueChanged = { inputId, newValue ->
@@ -45,6 +45,6 @@ fun FormScope.FormInputNumber(
             keyboardType = KeyboardType.Number,
             imeAction = imeAction
         ),
-        errorMessage = entry.errorMessageId?.let { stringResource(id = it) }
+        errorMessage = entry.errorMessageResId?.let { stringResource(id = it) }
     )
 }

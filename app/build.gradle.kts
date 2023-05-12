@@ -1,5 +1,5 @@
 plugins {
-    `android`
+    android
     `kotlin-android`
 }
 
@@ -15,6 +15,8 @@ dependencies {
     koin()
 
     coreUi()
+    forms()
+    game()
 
     tests()
 }

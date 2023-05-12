@@ -1,4 +1,4 @@
-package com.mikaelarmonia.forms.ui
+package com.mikaelarmonia.forms.ui.input
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer

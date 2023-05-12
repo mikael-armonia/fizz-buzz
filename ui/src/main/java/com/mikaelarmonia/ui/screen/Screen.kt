@@ -3,9 +3,9 @@ package com.mikaelarmonia.ui.screen
 import android.util.Log
 import androidx.navigation.NamedNavArgument
 
-private const val TAG = "Screen"
+private val TAG = Screen::class.simpleName
 
-sealed class Screen {
+abstract class Screen {
     abstract val baseRoute: String
     abstract val navArgs: List<NamedNavArgument>
 

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="input_field_number_1_title">First number</string>
+    <string name="input_field_number_2_title">Second number</string>
+    <string name="input_field_word_1_title">First word</string>
+    <string name="input_field_word_2_title">Second word</string>
+    <string name="input_field_threshold_title">Threshold</string>
+</resources>

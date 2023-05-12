@@ -11,6 +11,10 @@ fun DependencyHandler.forms() {
     project(projectName = "forms")
 }
 
+fun DependencyHandler.game() {
+    project(projectName = "game")
+}
+
 fun DependencyHandler.utils() {
     project(projectName = "utils")
 }
