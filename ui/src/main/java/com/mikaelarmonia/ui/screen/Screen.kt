@@ -9,14 +9,14 @@ abstract class Screen {
     abstract val baseRoute: String
     abstract val navArgs: List<NamedNavArgument>
 
-    fun destination(vararg params: Any): String? {
+    fun destination(vararg params: Any): String {
         return when (params.size) {
             navArgs.size -> {
                 navArgs.foldIndexed(baseRoute) { i, destination, arg ->
                     destination.replace("{${arg.name}}", "${params[i]}")
                 }
             }
-            else -> null.also {
+            else -> baseRoute.also {
                 Log.e(TAG, "Wrong parameters for screen ${javaClass.name}, params size : ${params.size}, args size : ${navArgs.size}")
             }
         }

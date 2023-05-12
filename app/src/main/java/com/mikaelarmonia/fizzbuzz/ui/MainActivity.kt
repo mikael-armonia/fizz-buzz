@@ -22,5 +22,3 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
-
-fun String.isNumeric() = toDoubleOrNull() != null

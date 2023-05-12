@@ -12,15 +12,14 @@ import org.koin.androidx.compose.koinViewModel
 
 @Composable
 fun GameSettingsComponent(
+    modifier: Modifier = Modifier,
     viewModel: GameSettingsViewModel = koinViewModel(),
     onSettingsValidated: () -> Unit,
 ) {
     val state by viewModel.state.collectAsState()
 
     FormComponent(
-        modifier = Modifier
-            .fillMaxWidth()
-            .padding(8.dp),
+        modifier = modifier.padding(8.dp),
         fields = state.formFields,
         onValueChangedListener = viewModel::onValueChanged,
         onValidate = {
