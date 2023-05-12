@@ -6,7 +6,7 @@ The Fizz Buzz game is a math game to see every common multiples of two numbers
 
 Here is a list of the current features :
 - Forms
-- Lazy List
+- Lazy Lists
 
 ## Screens
 
