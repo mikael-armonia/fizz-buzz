@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+    <string name="form_input_number_hint">Type a number...</string>
+    <string name="form_input_number_error_nan">Not a number.</string>
+    <string name="form_input_number_error_negative_number">Negative number.</string>
+    <string name="form_input_number_error_too_many_digits">Too many digits.</string>
+    <string name="form_input_string_hint">Type a word...</string>
+    <string name="form_validate_button_text">Validate</string>
+</resources>
