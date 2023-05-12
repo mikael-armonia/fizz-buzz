@@ -8,6 +8,7 @@ import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.material.TextField
+import androidx.compose.material.TextFieldDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
@@ -29,7 +30,8 @@ internal fun FormInput(
         Text(
             modifier = Modifier.fillMaxWidth(),
             text = title,
-            style = MaterialTheme.typography.h6
+            style = MaterialTheme.typography.h6,
+            color = MaterialTheme.colors.onSurface
         )
         Spacer(modifier = Modifier.padding(4.dp))
         TextField(
@@ -39,6 +41,7 @@ internal fun FormInput(
                 onValueChanged(inputId, newValue)
             },
             textStyle = MaterialTheme.typography.body1,
+            colors = TextFieldDefaults.textFieldColors(textColor = MaterialTheme.colors.onSurface),
             placeholder = {
                 Text(
                     text = hint,

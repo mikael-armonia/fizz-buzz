@@ -13,6 +13,7 @@ internal fun GamePlayItem(
     Text(
         modifier = modifier,
         text = item,
-        style = MaterialTheme.typography.h6
+        style = MaterialTheme.typography.h6,
+        color = MaterialTheme.colors.onSurface
     )
 }
